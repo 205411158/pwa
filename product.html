@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Daftar Product di Palugada</title>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name='description' content='Aplikasi PWA'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel='canonical' href='https://kulonprogokab.go.id/cadas_gunung/'>
+<link rel='manifest' href='manifest.json'>
+<meta name='mobile-web-app-capable' content='yes'>
+<meta name='apple-mobile-web-app-capable' content='yes'>
+<meta name='application-name' content='Air Horner'>
+<meta name='apple-mobile-web-app-status-bar-style' content='black'>
+<meta name='apple-mobile-web-app-title' content='Air Horner'>
+<link rel='icon' sizes='192x192' href='icon-192.png'>
+<link rel='apple-touch-icon'  href='icon-192.png'>
+<meta name='msapplication-TileImage' content='icon-192.png'>
+<meta name='msapplication-TileColor' content='#2196F3'>
+<meta name='theme-color' content='#2196F3'>
+<meta property='og:title' content='Aplikasi PWA'>
+<meta property='og:type' content='website'>
+<meta property='og:image' content='https://kulonprogokab.go.id/cadas_gunung/images/touch/android-launchericon-192-192.png'>
+<meta property='og:url' content='https://kulonprogokab.go.id/cadas_gunung/'>
+<meta property='og:description' content='Aplikasi PWA Tugas'>
+<meta name='twitter:card' content='summary'>
+<meta name='twitter:url' content='https://kulonprogokab.go.id/cadas_gunung/'>
+<meta name='twitter:title' content='Air Horn'>
+<meta name='twitter:description' content='The best and easiest Air Horn web app there is. No install just use it right away in your browser!'>
+<meta name='twitter:image' content='https://kulonprogokab.go.id/cadas_gunung/images/touch/android-launchericon-192-192.png'>
+<meta name='twitter:creator' content='@paul_kinlan'>
+<meta http-equiv='origin-trial' content='AoSmmU3xCcjOI6/9ixevLMwZJ6JQf+SEY0pIJPkw720gFR8VtDejaYmdkg9JX/sow51jBNeuoxzPlFg35jaMyQcAAABQeyJvcmlnaW4iOiJodHRwczovL2Fpcmhvcm5lci5jb206NDQzIiwiZmVhdHVyZSI6IkJhZGdpbmdWMiIsImV4cGlyeSI6MTYwMDIxNDM5OX0='>
+<link rel="stylesheet" href="style.css">
+<script src='scripts/pwacompat.min.js' async></script>
+</head>
+<body>
+
+<div class="header">
+  <h1>PT. PALUGADA</h1>
+</div>
+
+<div class="row">
+  <div class="col-3 col-s-3 menu">
+    <ul>
+      <li><a href="index.html" >Home</a></li>
+      <li><a href="product.html" >Product</a></li>
+      <li>About Us</li>
+      <li>News</li>
+    </ul>
+  </div>
+
+  <div class="col-6 col-s-9">
+    <h1>Pekerjaan Konstruksi</h1>
+    <p>Melayani Jasa Pembangunan Konstruksi sesuai budget yang anda miliki dengan kualitas baik.</p>
+	<img src="konstruksi.jpg" width="100%" height="345">
+	
+	<h1>Pekerjaan Konsultansi</h1>
+    <p>Melayani Jasa Konsultansi desain bangunan sesuai keinginan konsumen dengan kualitas baik.</p>
+	<img src="konsultansi.jpg" width="100%" height="345">
+  </div>
+
+  <div class="col-3 col-s-12">
+    <div class="aside">
+      <h2>PT. Palugada</h2>
+      <p>Sebuah perusahaan bertaraf nasional yang bergerak di bidang pengadaan barang dan jasa. Kami menerima segala project pengadaan barang dan jasa baik kontruksi, jasa lainnya, konsultansi dan pengadaan barang</p>
+      <h2>Alamat</h2>
+      <p>Kunjungi show room kami di Jalan Tamtama No.3 Yogyakarta</p>
+      
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <p>Anita Fajar Rianti 205411158
+
+</p>
+</div>
+
+<script>
+    if('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js', { scope: './' })
+        .then(function(registration) {
+              console.log('Service Worker Registered');
+        });
+
+      navigator.serviceWorker.ready.then(function(registration) {
+         console.log('Service Worker Ready');
+      });
+    }
+</script>
+
+</body>
+</html>
